@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "/css/style-detalle.css" %}">
+</head>
+<body>
+    {% include "nav.html" %}
+
+
+    <div class="contenido__detalle">
+
+        <div class="imagen__contenido">
+            <div class="imagen__detalle-imagen">
+                <div class="imagenes__detalle-box">
+
+                    <img src="/img/imagen-index-3.png" alt="">
+                    <img src="/img/imagen-index-3.png" alt="">
+                    <img src="/img/imagen-index-3.png" alt="">
+        
+                </div>
+                <img id="imagen__de__muestra" src="{% static "/img/imagen-index-3.png" %}" alt="">
+            </div>
+            <div class="texto__contenido">
+
+                <h2>Nombre</h2>
+                <p>Descripcion dep producto</p>
+                <h3>100$</h3>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="descripcion__detalle">
+        <div class="descipcion__contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus corrupti minima minus maxime sequi doloremque aperiam dolore quibusdam debitis est dolorem nam reiciendis omnis at distinctio, porro, nostrum ipsam asperiores!
+            Quisquam, facere quae vero error sapiente autem exercitationem quia magnam et, itaque nesciunt. Quae provident, modi magni officiis vero iure illum aliquam incidunt vitae distinctio inventore nostrum. Nisi, accusamus quos?
+            Modi ratione praesentium quod corporis sequi laborum repellat numquam sunt sed ipsam fuga temporibus, ea dolores nemo quis laudantium accusamus nostrum libero eveniet sapiente? Quisquam similique hic praesentium consequuntur deleniti!</p>
+        </div>
+    </div>
+
+    <img src="{% static "/img/imagen-detalle-1.jpg" %}"  class="imagen__pagos"  alt="">
+    {% include "footer.html" %}
+</body>
+</html>

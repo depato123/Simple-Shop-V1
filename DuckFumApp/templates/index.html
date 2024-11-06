@@ -1,0 +1,170 @@
+{% load static %}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/style-index.css" %}">
+    
+</head>
+
+<body>
+    {% include "nav.html" %}
+
+    <main>
+        <section class="contenido__pag">
+            <div class="banner__div">
+                <img src="{% static "img/imagen-index-1.png"%}" alt="perfume" class="banner">
+            </div>
+
+
+            <div class="promos" style="padding-top: 20px;">
+                <div class="texto__promo">
+                    <h2>Hasta 10%</h2>
+                    <div>
+                        <img src="{% static "img/imagen-10-desc.png" %}" id="izquierda__imagen" alt="">
+                    </div>
+                </div>
+                <div class="texto__promo">
+                    <h2>Envìo Gratis</h2>
+                    <div>
+                        <img src="{% static "img/imagen-10-desc.png" %}" id="izquierda__imagen" alt="">
+                    </div>
+                </div>
+                <div class="texto__promo">
+                    <h2>Regalos</h2>
+                    <div>
+                        <img src="{% static "img/imagen-10-desc.png" %}" id="izquierda__imagen" alt="">
+                    </div>
+                </div>
+                <div class="texto__promo">
+                    <h2>Premios</h2>
+                    <div>
+                        <img src="{% static "img/imagen-10-desc.png"%}" id="izquierda__imagen" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 class="texto__productos">LOS MEJORES PRODUCTOS DE LA MÀS ALTA CALIDAD DEL MERCADO</h3>
+
+
+
+            <div class="row__imagenes">
+                <div class="row__imagenes-divisor">
+                    <div class="imagenes_divisor-row" style="flex-direction: column;">
+                        <img src="{% static "img/kenzo1.png"%}" alt=""></a>
+                        <img src="{% static "img/issey1.png"%}" alt=""></a>
+                    </div>
+                    <img src="{% static "img/boss1.png"%}" class="boss_img" alt=""></a>
+                </div>
+            </div>
+
+            <div class="separador__contenidos">
+            </div>
+
+            <div class="div__contenedor-productos">
+                <h3 style="text-align: center; padding-bottom: 50px;">Productos</h3>
+                <div class="contenedor__productos">
+
+
+                    <div class="imagen__producto">
+                        <div class='card-image'>
+                            <img src="{% static "img/imagen-index-3.png"%}" alt="">
+                        </div>
+                        <div class="texto__imagen__producto">
+                            <h2>Nombre</h2>
+                            <p>Descripcion del producto</p>
+                            <h3>$100</h3>
+                        </div>
+                        <a href="/detalle"><button class="comprar">COMPRAR</button></a>
+                    </div>
+
+                    <div class="imagen__producto">
+                        <div class='card-image'>
+                            <img src="{% static "img/imagen-index-3.png"%}" alt="">
+                        </div>
+                        <div class="texto__imagen__producto">
+                            <h2>Nombre</h2>
+                            <p>Descripcion del producto</p>
+                            <h3>$100</h3>
+                        </div>
+                        <a href="/detalle"><button class="comprar">COMPRAR</button></a>
+                    </div>
+
+                    <div class="imagen__producto">
+                        <div class='card-image'>
+                            <img src="{% static "img/imagen-index-3.png"%}" alt="">
+                        </div>
+                        <div class="texto__imagen__producto">
+                            <h2>Nombre</h2>
+                            <p>Descripcion del producto</p>
+                            <h3>$100</h3>
+                        </div>
+                        <a href="/detalle"><button class="comprar">COMPRAR</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ubi__contenedor">
+
+                <div class="ubi__informacion-box">
+                    <div class="informacion__texto">
+                        <h1>¿DONDE ESTAMOS?</h1>
+                    </div>
+                    <div class="ubi__informacion">
+
+                        <div class="ubi__info-text">
+                            <h3 style="margin: 10px;">Callefalsa 123</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde inventore ratione culpa
+                                officia alias quis itaque, fuga, dolorem quas molestias tempora vitae laboriosam, ipsam
+                                repellendus. Culpa enim commodi inventore vero!</p>
+                        </div>
+
+                        <img src="{% static "img/mapa.jpg"%}" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="separador__contenidos">
+            </div>
+
+            <div class="div__fondo-blanco">
+                <div class="iconos__fondo">
+                    <div class="iconos__fondo-box">
+                        <a href="#">
+                            <img src="{% static "img/Regalos.png"%}" alt="Regalos por Compra"></a>
+                        <p class="iconos__fondo-texto">Regalos por Compra</p>
+                    </div>
+                    <div class="iconos__fondo-box">
+                        <a href="#"><img src="{% static "img/Envio.png"%}" alt="Envios a Domicilio"></a>
+                        <p class="iconos__fondo-texto">Envío Gratis Compras mayores a $5000</p>
+                    </div>
+                    <div class="iconos__fondo-box">
+                        <a href="#"><img src="{% static "img/Beneficio.png"%}" alt="Beneficios con Bancos y Tarjetas"></a>
+                        <p class="iconos__fondo-texto">Beneficios con Bancos y Tarjetas</p>
+                    </div>
+                    <div class="iconos__fondo-box">
+                        <a href="#"><img src="{% static "img/RetiroTienda.png"%}" alt="Retiro en Tienda"></a>
+                        <p class="iconos__fondo-texto">Retiro en Tienda</p>
+                    </div>
+                    <div class="iconos__fondo-box">
+                        <a href="#"><img src="{% static "img/Sucursales.png"%}" alt="Sucursales"></a>
+                        <p class="iconos__fondo-texto">Nuestras Sucursales</p>
+                    </div>
+                    <div class="iconos__fondo-box">
+                        <a href="#"><img src="{% static "img/AtencionCliente.png"%}" alt="Atención al Cliente"></a>
+                        <p class="iconos__fondo-texto">Atención al Cliente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    {% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style-carrito.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            {% include 'nav.html' %}
+        </nav>
+        <hr>
+    </header>
+
+    <div class="contenido__carrito">
+
+        <img style="padding-bottom: 10px; padding-top: 50px;" class="logo" src="{% static '/img/logo.png'%}" alt="">
+        <h2>Carrito</h2>
+
+        <hr>
+
+        <div>
+
+            <div class="contenido__articulo">
+                <a href="/detalle"><img src="{% static '/img/imagen-index-2.jpg'%}" alt=""></a>
+                <div class="texto__arituclo">
+                    <h2>Nombre del aritculo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo harum nihil sed quod cumque culpa, beatae inventore, dignissimos laudantium eligendi porro neque quos sunt voluptas dolor, eum eius! A?</p>
+                    <h3>$2500</h3>
+                    <div class="cantidad__carrito"> 
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido__articulo">
+                <a href="/detalle"><img src="{% static '/img/imagen-index-3.png'%}" alt=""></a>
+                <div class="texto__arituclo">
+                    <h2>Nombre del aritculo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel repellendus ea facere ut sed id placeat incidunt impedit asperiores? Repellendus et quasi, quos velit iure blanditiis atque possimus at.</p>
+                    <h3>$2500</h3>
+                    <div class="cantidad__carrito"> 
+                        <button>-</button>
+                        <p>2</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="margin-bottom: 25px;">
+        <p>2 artìculos en el carrito</p>
+        <h3>TOTAL: $5000.00</h3>
+        <p style="margin-top: 15px;">
+            <label class="custom-radio-checkbox" >
+                <!-- Input oculto -->
+                <input  type="checkbox" name="genero" value="hombre">
+                <!-- Texto -->
+                <span  class="custom-radio-checkbox__text">Acepto las condiciones de uso y privacidad</span>
+            </label>
+        </p>
+        <button style="margin-top: 25px;">COMPRAR</button>
+    </div>
+
+
+    {% include "footer.html" %}
+</body>
+</html>

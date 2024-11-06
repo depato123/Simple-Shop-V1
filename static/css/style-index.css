@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: white;
+ /*   background: #f7f3eb; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    color: white;    
+}
+
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+button:hover {
+    color: #02081a;
+    background: #d1d1d1;
+    font-size: 110%;
+}
+
+/* acá termina el nav */
+
+
+.content__header .texto__content {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #070c1b;
+    color: white;
+    text-align: center;
+}
+
+.separador__contenidos {
+    background: #f5f5f5;
+    padding: 15px 0;
+}
+
+
+.content__header .texto__content h3{
+    /* apagado */
+    display: none;
+}
+
+
+img{
+    width: 100%;
+}
+
+.contenido__pag .promos {
+    display: flex;
+    width: 76.5%;
+    margin: auto ;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+
+
+.texto__promo{
+    width: 20%;
+    position: relative;
+    /*Agrego estos dos estilos*/
+    box-sizing: border-box;
+    transition: 1s; /*Con esto hago que las transiciones duren 1 segundo*/
+}
+
+/*Aca aplico HOVER para cuando se apoye un mouse muestre un borde de color y se agrande*/
+.texto__promo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(6 6 6 / 30%);
+}
+
+
+.texto__promo h2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.row__imagenes{
+    width: 100%;
+}
+
+
+.row__imagenes-divisor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 73%;
+    margin: auto;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.imagenes_divisor-row{    
+    display: flex;
+    flex-direction: column;
+    width: 104%;
+}
+
+
+.texto__productos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 100%;
+}
+
+.contenedor__productos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto__imagen__producto {
+    text-align: center;
+}
+
+.imagen__producto a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div__contenedor-productos {
+    width: 100%;
+    padding-bottom: 50px; 
+    background: #f5f5f5;
+}
+
+.imagen__producto {
+    width: 280px;
+    box-shadow: 0 0 10px rgb(6 6 6 / 30%);
+    border-radius: 12px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.imagen__producto:hover{
+    box-shadow: 0 0 10px rgb(6 6 6 / 50%);
+    transition: 0.99;
+}
+
+
+.imagen__producto img{
+    width: 220px;
+}
+
+.imagen__producto .comprar{
+    margin-top: 5%;
+}
+
+.imagen__producto h2{
+    color: rgb(15, 27, 92);
+    font-size: 120%;
+}
+
+.imagen__producto p{
+    font-size: 75%;
+}
+
+.imagen__producto h3{
+    color: rgb(15, 27, 92);
+    text-decoration: white;
+    margin-top:2%;
+}
+
+
+
+.imagen__producto.imagen_centro {
+    width: 30vw;
+}
+
+.ubi__contenedor{
+    background: #f7f5f0;
+    margin-top: 50px;
+}
+
+.informacion__texto{
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ubi__informacion-box{
+    width: 72%;
+    margin: auto;
+    text-align: center;
+}
+
+.ubi__informacion{
+    display: flex;
+    align-items: center;
+}
+
+.ubi__informacion img{
+    width: 50%;
+}
+
+.div__fondo-blanco{
+    background: white;
+    width: 100%;
+}
+
+.iconos__fondo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 30px;
+    background: #fff;
+    width: 85%;
+    margin: auto;
+    border-top: 1px solid #e6e6e8;
+}
+
+.iconos__fondo-box {
+    display: flex;
+    margin-right: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 16%;
+    text-align: center;
+}
+
+.iconos__fondo-texto {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000!important;
+    margin-top: 5px;
+    line-height: 1.5;
+    max-width: 125px;
+}
+
+
+@media screen and (max-width: 400px){
+
+    /* contenido */
+
+    .contenido__pag .promos{
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+    }
+
+    #izquierda__imagen{
+        margin-left: 0;
+    }
+     #derecha__imagen{
+        margin-right: 0;
+    }
+
+
+    .row__imagenes-divisor {
+        width: 85%;
+    }
+
+    .texto__productos{
+        font-size: 75%;
+    }
+
+
+    #noSeVe{
+        display: none;
+    }
+
+
+
+    .ubi__informacion {
+        flex-direction: column;
+    }
+
+    .iconos__fondo {
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        padding-top: 30px;
+    }
+
+    .iconos__fondo-box {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .contenedor__productos {
+        flex-direction: unset;
+        justify-content: space-evenly;
+        width: 75%;
+        margin: auto;
+    }
+
+    .imagen__producto {
+        height: 300px;
+    }
+    .imagen__producto img {
+        width: 148px;
+    }
+
+    .contenedor__productos div:nth-child(2) {
+        transform: scale(1.2);
+    }
+}
+
+/*Por aca paso el brayan*/

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style-registro.css' %}">
+</head>
+<body>
+    {% include "nav.html" %}
+
+    <div class="contenido__register">
+
+        <img style="padding-bottom: 10px; padding-top: 50px;" class="logo" src="{% static '/img/logo.png'%}"  >
+        <h2>Panel de Registro</h2>
+        <p>Registrate para continuar comprando.</p>
+        <hr>
+            <form id="formulario_registro" method="post">
+                {% csrf_token %}
+                <label for="{{ form.username.id_for_label }}">Usuario:</label>
+                {{ form.username }}
+                <br>
+                <label for="{{ form.first_name.id_for_label }}">Nombre Real:</label>
+                {{ form.first_name }}
+                <br>
+                <label for="{{ form.email.id_for_label }}">Email:</label>
+                {{ form.email }}
+                <br>
+                <label for="{{ form.password1.id_for_label }}">Clave:</label>
+                {{ form.password1 }}
+                <br>
+                <label for="{{ form.password2.id_for_label }}">Repite tu clave:</label>
+                {{ form.password2 }}
+                <br>
+                <br>
+                {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                <br>
+                <button type="submit">Registrarse</button>
+            </form>
+            <hr>
+            <br>
+            <a href="/login/"><button>Iniciar Sesion</button></a>
+            <a href="/"><button>Cancelar</button></a>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

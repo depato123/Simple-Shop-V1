@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style-login.css' %}">
+    
+</head>
+<body>
+    {% include "nav.html" %}
+
+    <div class="contenido__login">
+
+        <img style="padding-bottom: 10px; padding-top: 50px;" class="logo" src="{% static '/img/logo.png'%}" alt="">
+        <h2>Panel de usuario</h2>
+        <p>Conectate para recibir novedades y comprar</p>
+        <hr style="margin-top: 25px; margin-bottom: 25px;">
+        <from for="nombre">
+            <h2>Iniciar sesión</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Ingresar</button>
+            </form>     
+        <div class="botones" style="padding-top: 25px;">
+            <hr style="margin-bottom: 25px;">
+            <a href="/registro"><button>Registrarse</button></a>
+            <button>Olvidé mi clave</button>
+            <a href="/"><button>Salir</button></a>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+</body>
+</html>

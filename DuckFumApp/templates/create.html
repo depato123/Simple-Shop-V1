@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %} 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style-admCreate.css' %}">
+
+</head>
+
+<body>
+    <div class="logo__div"><img style="padding-bottom: 10px; padding-top: 50px;" class="logo" src="{% static '/img/logo.png'%}"alt=""></div>
+    <section>
+        <div class="seccion__info">
+            <h1>Panel de Administrador</h1>
+            <hr>
+            <h3>Por favor, llene los campos para cargar un artículo a la tienda</h3>
+        </div>
+    </section>
+
+    <section>
+        <div class="div__articulo">
+            <form action="" method="post">
+                <label for="GET-name">Nombre:</label>
+                <input id="GET-name" type="text" name="nombre">
+            </form>
+
+            <form action="" method="post">
+                <label for="GET-codigo__de__barra">Codigo de Barra:</label>
+                <input id="GET-codigo__de__barra" type="text" name="codigo__de__barra">
+            </form>
+
+            <form action="" method="post">
+                <label for="GET-descripcion">Descripción:</label>
+                <input id="GET-descripcion" type="text" name="descripcion">
+            </form>
+
+            <form action="" method="post">
+                <label for="POST-image">Imagenes:</label>
+                <input type="file">
+                <input type="file">
+                <input type="file">
+            </form>
+            <div class="botones">
+                <button>Vista Previa</button>
+                <button>Subir</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

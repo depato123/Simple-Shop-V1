@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: white;
+ /*   background: #f7f3eb; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    color: white;    
+}
+
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+button:hover {
+    color: #02081a;
+    background: #d1d1d1;
+    font-size: 120%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenido */
+.contenido__login{
+    background: #f5f5f5;
+    margin: auto;
+    width: 55%;
+    text-align: center;
+    box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 30%);
+    height: 85vh;
+}
+
+.contenido__login h1{
+    margin: 25px;
+}
+
+.contenido__login h2{
+    margin: 20px;
+}
+
+.contenido__login p{
+    margin: 15px;
+}
+
+
+/*  */
+
+
+
+@media screen and (max-width: 400px){
+
+    /* nav */
+
+    /* contenido */
+
+
+    .botones{
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: white;
+ /*   background: #f7f3eb; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    color: white;    
+}
+
+button {
+    margin-bottom: 15px;
+    background: rgb(0, 0, 0);
+    border: 0px;
+    padding: 0px;
+    width: 67%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+button:hover {
+    color: #02081a;
+    background: #d1d1d1;
+    font-size: 100%;
+}
+
+/* Contenido */
+
+.contenedor{
+
+}
+
+.box__contendor{
+    width: 73%;
+    display: grid;
+    grid-template-areas:
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8";
+    margin: auto;
+    padding-bottom: 50px ;
+}
+
+.contenedor .producto{
+    text-align: center;
+    box-shadow: 0 0 10px rgb(6 6 6 / 10%);
+    padding: 20px;
+
+}
+
+.contenedor .producto .imagen__producto{
+    width: 250px;
+    max-width: 250px;
+    height: 250px;
+    max-height: 250px;
+}
+
+
+@media screen and (max-width: 400px){
+    /* media query */
+    .box__contendor{
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8";
+    }
+}

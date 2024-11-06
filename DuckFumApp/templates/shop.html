@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %} 
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="{% static 'css/style-shop.css' %}">
+    </head>
+
+    <body>
+        {% include "nav.html" %}
+
+
+
+        <div class="contenedor">
+
+            <div class="box__contendor">
+
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-2.jpg'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-3.png'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-2.jpg'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-3.png'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+                <!-- segunda tanda -->
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-2.jpg'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-3.png'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-2.jpg'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+                <div class="producto">
+                    <a href="/detalle"><img class="imagen__producto" src="{% static 'img/imagen-index-3.png'%}" alt=""></a>
+                    <p>PERFUME</p>
+                    <h3>$2500</h3>
+                    <a href="/carrito"><button>COMPRAR</button></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        {% include "footer.html" %}
+    </body>
+
+    </html>
